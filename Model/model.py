@@ -20,14 +20,13 @@ class Model:
         offAttr = Model.attr_val_list(offensePlayer)
         defAttr = Model.attr_val_list(defensePlayer)
         Model.team1.append([vitalsPlayer, offAttr, defAttr])
-        print(Model.team1)
 
     def attr_val_list(self):
-        vlist = []
+        kvlist = []
         items = self.__dict__.items()
         for k, v in items:
-            vlist.append({k, v})
-        return vlist
+            kvlist.append({k, v})
+        return kvlist
     
 #class PlayerBoxScore(object):
    # name = None
