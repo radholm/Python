@@ -1,0 +1,254 @@
+{
+    "players": [
+        {
+            "pid": 0,
+            "fullname": "Clarke Davis",
+            "position": "PG",
+            "team": "LAL",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 85,
+                            "perimeter": 90,
+                            "passing": 68
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 55,
+                            "perimeter": 78
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 1,
+            "fullname": "Dale Garcia",
+            "position": "C",
+            "team": "LAL",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 63,
+                            "perimeter": 56,
+                            "passing": 56
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 81,
+                            "perimeter": 67
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 2,
+            "fullname": "Rae Pollard",
+            "position": "PF",
+            "team": "LAL",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 77,
+                            "perimeter": 83,
+                            "passing": 76
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 51,
+                            "perimeter": 64
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 3,
+            "fullname": "Meyer Mcmahon",
+            "position": "PF",
+            "team": "LAL",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 58,
+                            "perimeter": 50,
+                            "passing": 68
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 94,
+                            "perimeter": 91
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 4,
+            "fullname": "Calderon Galloway",
+            "position": "C",
+            "team": "LAL",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 64,
+                            "perimeter": 70,
+                            "passing": 67
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 62,
+                            "perimeter": 78
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 5,
+            "fullname": "Deanne Williams",
+            "position": "SF",
+            "team": "BOS",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 78,
+                            "perimeter": 57,
+                            "passing": 91
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 53,
+                            "perimeter": 78
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 6,
+            "fullname": "Mae Maxwell",
+            "position": "PG",
+            "team": "BOS",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 56,
+                            "perimeter": 52,
+                            "passing": 57
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 64,
+                            "perimeter": 76
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 7,
+            "fullname": "English Valencia",
+            "position": "SG",
+            "team": "BOS",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 75,
+                            "perimeter": 61,
+                            "passing": 90
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 50,
+                            "perimeter": 59
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 8,
+            "fullname": "Atkinson Hendricks",
+            "position": "PF",
+            "team": "BOS",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 75,
+                            "perimeter": 93,
+                            "passing": 50
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 60,
+                            "perimeter": 64
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pid": 9,
+            "fullname": "Booker Valenzuela",
+            "position": "C",
+            "team": "BOS",
+            "ratings": [
+                {
+                    "offense": [
+                        {
+                            "inside": 87,
+                            "perimeter": 82,
+                            "passing": 80
+                        }
+                    ]
+                },
+                {
+                    "defense": [
+                        {
+                            "inside": 93,
+                            "perimeter": 76
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
