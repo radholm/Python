@@ -20,6 +20,7 @@ class Model:
         offAttr = Model.attr_val_list(offensePlayer)
         defAttr = Model.attr_val_list(defensePlayer)
         Model.team1.append([vitalsPlayer, offAttr, defAttr])
+        sad
 
     def attr_val_list(self):
         kvlist = []
