@@ -1,8 +1,8 @@
+from typing import OrderedDict
 from json_players import get_obj
+from Model.team_calc import calc_team_means
 
 class Model:
-    
-    plaP = 0
     
     boxScoreList = [] # [[team1boxscores], [team2boxscores]]
     
@@ -12,21 +12,39 @@ class Model:
 
     def calculate_box_score(players):
         Model.create_team_profiles(players)
+        Model.calculate_team_means(Model.team1, Model.team2)
         
-    def create_team_profiles(players): # [[vitals], [offense], [defense]]
-        vitalsPlayer = players.players[Model.plaP]
-        offensePlayer = players.players[Model.plaP].ratings[0].offense[0]
-        defensePlayer = players.players[Model.plaP].ratings[1].defense[0]
-        offAttr = Model.attr_val_list(offensePlayer)
-        defAttr = Model.attr_val_list(defensePlayer)
-        Model.team1.append([vitalsPlayer, offAttr, defAttr])
+    def create_team_profiles(players): # [[player], [offense], [defense]], bug if teams unequal?
+        plaP = 0
+        for p in range(len(players.players)): # p is never used
+            vitalsPlayer = players.players[plaP]
+            #offensePlayer = players.players[plaP].ratings[0].offense[0]
+            #defensePlayer = players.players[plaP].ratings[1].defense[0]
+            #offAttr = Model.attr_val_list(offensePlayer)
+            #defAttr = Model.attr_val_list(defensePlayer)
+            if vitalsPlayer.team == 'LAL': # If multiple teams, change this
+                Model.team1.append([vitalsPlayer, offAttr, defAttr])
+                plaP += 1
+            else:
+                Model.team2.append([vitalsPlayer, offAttr, defAttr])
+                plaP += 1
+                
+    def calculate_team_means(team1, team2):
+        teams = [team1, team2]
+        calc_team_means(team1)
+        #for t in range(len(teams)):
+        #    for pt in range(len(teams[t])):
+        #        for ptr in range(len(teams[t][pt])):
+        #           print((teams[t][pt][ptr]))
+                    
 
     def attr_val_list(self):
-        kvlist = []
+        """This breaks the object and returns a dict again!"""
+        kvDict = OrderedDict()
         items = self.__dict__.items()
         for k, v in items:
-            kvlist.append({k, v})
-        return kvlist
+            kvDict[k] = v
+        return kvDict
     
 #class PlayerBoxScore(object):
    # name = None
