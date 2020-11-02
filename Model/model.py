@@ -1,4 +1,3 @@
-from typing import OrderedDict
 from json_players import get_obj
 from Model.team_calc import calc_team_means
 
@@ -18,15 +17,11 @@ class Model:
         plaP = 0
         for p in range(len(players.players)): # p is never used
             vitalsPlayer = players.players[plaP]
-            #offensePlayer = players.players[plaP].ratings[0].offense[0]
-            #defensePlayer = players.players[plaP].ratings[1].defense[0]
-            #offAttr = Model.attr_val_list(offensePlayer)
-            #defAttr = Model.attr_val_list(defensePlayer)
             if vitalsPlayer.team == 'LAL': # If multiple teams, change this
-                Model.team1.append([vitalsPlayer, offAttr, defAttr])
+                Model.team1.append([vitalsPlayer])
                 plaP += 1
             else:
-                Model.team2.append([vitalsPlayer, offAttr, defAttr])
+                Model.team2.append([vitalsPlayer])
                 plaP += 1
                 
     def calculate_team_means(team1, team2):
@@ -36,15 +31,6 @@ class Model:
         #    for pt in range(len(teams[t])):
         #        for ptr in range(len(teams[t][pt])):
         #           print((teams[t][pt][ptr]))
-                    
-
-    def attr_val_list(self):
-        """This breaks the object and returns a dict again!"""
-        kvDict = OrderedDict()
-        items = self.__dict__.items()
-        for k, v in items:
-            kvDict[k] = v
-        return kvDict
     
 #class PlayerBoxScore(object):
    # name = None
